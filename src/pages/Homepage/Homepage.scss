@@ -1,15 +1,106 @@
+@import '../../styles/partials/mixins';
+
 main {
-    background: rgb(4, 3, 96);
-    background: radial-gradient(circle, rgba(4, 3, 96, 1) 9%, rgba(0, 0, 50, 1) 100%);
-    height: 100vh;
+    background: rgb(3, 2, 71);
+    background: radial-gradient(circle, rgba(3, 2, 71, 1) 9%, rgba(0, 0, 50, 1) 100%);
+    // height: 100%;
 }
 
 .hero {
-    height: 1000px;
+    height: 860px;
     width: 100%;
-    // background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 200px;
 
-    &-contianer {
-        height: 100px;
+    &__container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 80px;
+        line-height: 66px;
+        @include font-bold();
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        font-size: 60px;
+        line-height: 44px;
+        @include font-light;
+    }
+
+    &__headshot {
+        border-radius: 50%;
+        height: 300px;
+        border-radius: 50%;
+        box-shadow: 6px 6px 0 2px white;
+        /* Set the border width and color */
+
+    }
+}
+
+.skills {
+    // height: 200px;
+    padding: 0 200px;
+
+    &__header {
+        @include h2-tablet__desk;
+        margin-bottom: 32px;
+    }
+
+    &__container {
+        padding: 0 32px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 36px;
+
+        &--logo-wrap {
+            display: flex;
+            align-items: center;
+            // height: 50px;
+        }
+
+        &--logo {
+            height: 50px;
+            max-height: 50px;
+            max-width: 132px;
+            object-fit: contain;
+        }
+
+        &--logo-title {
+            margin-left: 8px;
+            font-size: 24px;
+        }
+    }
+
+}
+
+
+.projects {
+    &__header {
+        margin-bottom: 32px;
+    }
+}
+
+.project {
+    width: 40vw;
+
+    &__title {
+        @include h2-tablet__desk;
+    }
+
+    &__img {
+        height: 300px;
+        width: 100%;
+        object-fit: contain;
+        color: grey;
+    }
+
+    &__description {
+        @include p-tablet__desk;
     }
 }

@@ -1,9 +1,29 @@
 // @import './variables';
 @import './fonts';
-// @import './mixins';
+@import './mixins';
 
 
 .active {
     color: white;
     border-bottom: 0.25rem white solid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include font-reg;
+    color: white;
+}
+
+p {
+    @include font-reg;
+    color: white;
+}
+
+a {
+    @include font-reg;
+    color: white;
 }

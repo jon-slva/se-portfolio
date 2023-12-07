@@ -48,8 +48,8 @@
     }
 }
 
-// Subject Pills
-@mixin subject-pill {
+// Skill Pills
+@mixin skill-pill {
     padding: 4px 12px;
     font-size: 14px;
     background-color: $earth-green;
@@ -79,13 +79,18 @@
 
 // Fonts
 @mixin font-reg {
-    font-family: 'Raleway-Reg', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 400;
+    font-family: 'Nunito Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: normal;
 }
 
 @mixin font-bold {
-    font-family: 'Raleway-Bold', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 700;
+    font-family: 'Nunito Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+}
+
+@mixin font-light {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: lighter;
 }
 
 
@@ -98,7 +103,7 @@
 
 @mixin h1-tablet__desk {
     font-size: 33px;
-    // line-height: 44px;
+    line-height: 44px;
     @include font-bold();
 }
 
