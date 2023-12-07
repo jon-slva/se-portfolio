@@ -1,0 +1,21 @@
+.header {
+    height: 60px;
+    // background-color: darkred;
+    // position: absolute;
+
+    &-nav {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        & ul {
+            display: flex;
+        }
+
+        &__items {
+            padding: 0 16px;
+            // color: white;
+        }
+
+    }
+}
