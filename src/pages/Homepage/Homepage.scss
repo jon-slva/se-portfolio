@@ -1,7 +1,13 @@
+main {
+    background: rgb(4, 3, 96);
+    background: radial-gradient(circle, rgba(4, 3, 96, 1) 9%, rgba(0, 0, 50, 1) 100%);
+    height: 100vh;
+}
+
 .hero {
     height: 1000px;
     width: 100%;
-    background-color: black;
+    // background-color: black;
 
     &-contianer {
         height: 100px;

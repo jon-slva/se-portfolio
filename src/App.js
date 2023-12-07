@@ -6,7 +6,7 @@ import Homepage from './pages/Homepage/Homepage';
 
 function App() {
   return (
-    <>
+    <main>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -16,7 +16,7 @@ function App() {
           <Route path='/404' />
         </Routes>
       </BrowserRouter>
-    </>
+    </main>
   );
 }
 
