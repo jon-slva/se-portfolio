@@ -5,7 +5,7 @@ import Homepage from './pages/Homepage/Homepage';
 
 function App() {
   return (
-    <>
+    <div className='appContain'>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -15,7 +15,7 @@ function App() {
           <Route path='/404' />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

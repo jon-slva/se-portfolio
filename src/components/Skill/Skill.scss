@@ -1,0 +1,54 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+
+
+.skills {
+
+    &__header {
+        @include h2-tablet__desk;
+        margin-bottom: 44px;
+    }
+
+    &__container {
+        padding: 0 16px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 36px;
+
+        @include tablet {
+            padding: 0 16px;
+            // display: flex;
+            // justify-content: center;
+            // flex-wrap: wrap;
+            gap: 36px;
+        }
+
+        @include desktop {
+            padding: 0 16px;
+            // display: flex;
+            // justify-content: center;
+            // flex-wrap: wrap;
+            gap: 36px;
+        }
+
+        &--logo-wrap {
+            display: flex;
+            align-items: center;
+            // height: 50px;
+        }
+
+        &--logo {
+            height: 50px;
+            max-height: 50px;
+            max-width: 132px;
+            object-fit: contain;
+        }
+
+        &--logo-title {
+            margin-left: 8px;
+            font-size: 24px;
+        }
+    }
+
+}

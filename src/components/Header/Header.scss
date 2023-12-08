@@ -1,8 +1,21 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+
+
 .header {
     height: 60px;
-    // background-color: darkred;
+    width: 100%;
+    // padding: 0 16px;
     position: absolute;
-    // z-index: 1;
+    display: flex;
+
+    @include tablet {
+        padding: 0 60px;
+    }
+
+    @include desktop {
+        padding: 0 260px;
+    }
 
     &-nav {
         display: flex;
@@ -16,6 +29,10 @@
         &__items {
             padding: 0 16px;
             color: white;
+
+            & a {
+                cursor: pointer;
+            }
         }
 
     }

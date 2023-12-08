@@ -3,104 +3,187 @@
 main {
     background: rgb(3, 2, 71);
     background: radial-gradient(circle, rgba(3, 2, 71, 1) 9%, rgba(0, 0, 50, 1) 100%);
-    // height: 100%;
+    padding: 0 20px 60px 20px;
+
+    @include tablet {
+        padding: 0 60px 60px 60px;
+    }
+
+    @include desktop {
+        padding: 0 200px 60px 200px;
+    }
 }
 
 .hero {
-    height: 860px;
+    height: 400px;
     width: 100%;
     display: flex;
-    align-items: center;
-    padding: 0 200px;
+    // align-items: flex-start;
+
+    @include tablet {
+        align-items: center;
+        height: 700px;
+    }
+
+    @include desktop {
+        align-items: center;
+        height: 700px;
+    }
 
     &__container {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 100px;
+        // gap: 4px;
         width: 100%;
+
+        @include tablet {
+            align-items: center;
+            justify-content: center;
+            gap: 48px;
+        }
+
+        @include desktop {
+            align-items: center;
+            justify-content: center;
+            gap: 48px;
+        }
+    }
+
+    &__container-text {
+        width: 400px;
     }
 
     &__title {
-        font-size: 80px;
-        line-height: 66px;
-        @include font-bold();
+        font-size: 40px;
+        line-height: 44px;
+        @include font-bold;
         margin-bottom: 16px;
+
+        @include tablet {
+            font-size: 80px;
+            line-height: 66px;
+        }
+
+        @include desktop {
+            font-size: 80px;
+            line-height: 66px;
+        }
     }
 
     &__subtitle {
-        font-size: 60px;
+        font-size: 28px;
+        line-height: 33px;
+        @include font-light;
+        margin-bottom: 16px;
+
+        @include tablet {
+            font-size: 60px;
+            line-height: 44px;
+            // padding: 0 60px 60px 60px;
+        }
+
+        @include desktop {
+            font-size: 60px;
+            // padding: 0 200px 60px 200px;
+        }
+    }
+
+    &__github {
+        font-size: 24px;
+        line-height: 22px;
+        @include font-light;
+    }
+
+    @include tablet {
+        font-size: 40px;
         line-height: 44px;
         @include font-light;
     }
 
+    @include desktop {
+        font-size: 40px;
+        line-height: 44px;
+        @include font-light;
+    }
+
+    &__github-logo {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        margin-left: 8px;
+        transform: translateY(8px);
+
+        @include tablet {
+            height: 40px;
+            width: 40px;
+        }
+
+        @include desktop {
+            height: 40px;
+            width: 40px;
+        }
+    }
+
     &__headshot {
         border-radius: 50%;
-        height: 300px;
-        border-radius: 50%;
+        height: 120px;
+        transform: translateX(-8px);
         box-shadow: 6px 6px 0 2px white;
-        /* Set the border width and color */
 
-    }
-}
-
-.skills {
-    // height: 200px;
-    padding: 0 200px;
-
-    &__header {
-        @include h2-tablet__desk;
-        margin-bottom: 32px;
-    }
-
-    &__container {
-        padding: 0 32px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 36px;
-
-        &--logo-wrap {
-            display: flex;
-            align-items: center;
-            // height: 50px;
+        @include tablet {
+            height: 200px;
         }
 
-        &--logo {
-            height: 50px;
-            max-height: 50px;
-            max-width: 132px;
-            object-fit: contain;
+        @include desktop {
+            height: 300px;
         }
+    }
 
-        &--logo-title {
-            margin-left: 8px;
+    &__bio {
+        font-size: 14px;
+        line-height: 22px;
+        @include font-light;
+        margin-bottom: 16px;
+
+        border-right: .15rem solid white;
+        margin: 0 auto;
+        animation:
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+
+        @include tablet {
             font-size: 24px;
+            line-height: 33px;
+        }
+
+        @include desktop {
+            font-size: 24px;
+            line-height: 33px;
         }
     }
 
-}
+    @keyframes typing {
+        from {
+            clip-path: inset(0 100% 0 0);
+        }
 
-
-.projects {
-    &__header {
-        margin-bottom: 32px;
-    }
-}
-
-.project {
-    width: 40vw;
-
-    &__title {
-        @include h2-tablet__desk;
+        to {
+            clip-path: inset(0);
+        }
     }
 
-    &__img {
-        height: 300px;
-        width: 100%;
-        object-fit: contain;
-        color: grey;
+    @keyframes blink-caret {
+
+        from,
+        to {
+            border-color: transparent
+        }
+
+        50% {
+            border-color: orange;
+        }
     }
 
-    &__description {
-        @include p-tablet__desk;
-    }
 }
