@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+## About
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my repo for my Software Engineer Portfolio site! No need to contribute, this is just my playground.
+
 
 ## Available Scripts
 

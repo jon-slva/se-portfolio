@@ -1,0 +1,82 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+
+
+.skills {
+
+    &__header {
+        @include h2-tablet__desk;
+        margin-bottom: 44px;
+    }
+
+    &__container {
+        padding: 0 16px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 36px;
+
+        @include tablet {
+            padding: 0 16px;
+            // display: flex;
+            // justify-content: center;
+            // flex-wrap: wrap;
+            gap: 36px;
+        }
+
+        @include desktop {
+            padding: 0 16px;
+            // display: flex;
+            // justify-content: center;
+            // flex-wrap: wrap;
+            gap: 36px;
+        }
+
+        &--logo-wrap {
+            display: flex;
+            align-items: center;
+            // height: 50px;
+        }
+
+        &--logo {
+            height: 50px;
+            max-height: 50px;
+            max-width: 132px;
+            object-fit: contain;
+            filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+        }
+
+        &--logo-title {
+            margin-left: 8px;
+            font-size: 24px;
+            text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.4);
+        }
+    }
+
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(4deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.wiggle {
+    animation: wiggle 0.5s ease-in-out;
+}
