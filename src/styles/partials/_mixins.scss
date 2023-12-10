@@ -14,6 +14,12 @@
     }
 }
 
+@mixin desktop-large {
+    @media (min-width: $desktop-large-breakpoint) {
+        @content;
+    }
+}
+
 // Form buttons
 @mixin labels-buttons($fontColor) {
     color: $fontColor;

@@ -1,30 +1,6 @@
 @import '../../styles/partials/variables';
 @import '../../styles/partials/mixins';
 
-.projects {
-    margin-top: 60px;
-
-    &__header {
-        @include h2-tablet__desk;
-        margin-bottom: 44px;
-    }
-
-    &-container {
-        padding: 0 16px;
-        display: flex;
-        justify-content: center;
-        // gap: 100px;
-        margin-bottom: 60px;
-
-        @include tablet {
-            gap: 80px;
-        }
-
-        @include desktop {
-            gap: 80px;
-        }
-    }
-}
 
 .project {
     width: 46%;
