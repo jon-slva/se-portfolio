@@ -1,0 +1,233 @@
+@import './variables';
+@import './fonts';
+
+// Media Queries
+@mixin tablet {
+    @media (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+// Form buttons
+@mixin labels-buttons($fontColor) {
+    color: $fontColor;
+    font-size: 0.625rem;
+    line-height: 1.25rem;
+    @include font-bold();
+    text-transform: uppercase;
+}
+
+@mixin button-styling() {
+    background-color: $earth-green;
+    text-align: center;
+    width: 100%;
+    height: 2.5rem;
+    // padding: 0 2rem;
+    border-radius: 0.25rem;
+    color: $white;
+    font-size: 0.875rem;
+    @include font-bold();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    &:hover {
+        background-color: $light-color-1;
+    }
+
+    @include tablet {
+        width: 9.375rem;
+    }
+}
+
+// Skill Pills
+@mixin skill-pill {
+    padding: 4px 12px;
+    font-size: 14px;
+    background-color: $earth-green;
+    width: fit-content;
+    color: $white;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+// Interest Pills
+@mixin interest-pill {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 14px;
+    background-color: $earth-blue;
+    width: fit-content;
+    color: $white;
+    border-radius: 20px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+// Fonts
+@mixin font-reg {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: normal;
+}
+
+@mixin font-bold {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+}
+
+@mixin font-light {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+
+// Text Styling -- TABLET/DESKTOP
+@mixin body-tablet__desk {
+    font-size: 14px;
+    line-height: 22px;
+    @include font-reg();
+}
+
+@mixin h1-tablet__desk {
+    font-size: 33px;
+    line-height: 44px;
+    @include font-bold();
+}
+
+@mixin h2-tablet__desk {
+    font-size: 24px;
+    line-height: 20px;
+    @include font-bold();
+}
+
+@mixin h3-tablet__desk {
+    font-size: 16px;
+    line-height: 22px;
+    @include font-bold();
+}
+
+@mixin p-tablet__desk {
+    font-size: 14px;
+    line-height: 22px;
+    @include font-reg();
+}
+
+@mixin labels-buttons-tablet_desk {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 20px;
+    @include font-bold();
+}
+
+
+// Text Styling -- MOBILE
+@mixin body-mobile {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    @include font-reg();
+}
+
+@mixin h1-mobile {
+    font-size: 24px;
+    line-height: 32px;
+    @include font-bold();
+}
+
+@mixin h2-mobile {
+    font-size: 14px;
+    line-height: 1.25rem;
+    @include font-bold();
+}
+
+@mixin h3-mobile {
+    font-size: 14px;
+    line-height: 1.125rem;
+    @include font-bold();
+}
+
+@mixin p-mobile {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    @include font-reg();
+}
+
+@mixin labels-buttons-mobile {
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    @include font-bold();
+}
+
+
+// Lables & Buttons
+
+@mixin user-icon-mobile {
+    background-color: $mercury;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    width: 2.25rem;
+    min-width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+}
+
+@mixin user-icon-tablet-desk {
+    background-color: $mercury;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    width: 2.5rem;
+    min-width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+@mixin flexbox-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin border-bottom {
+    border: 0 0 0.0625rem 0;
+    border-bottom: solid $mercury;
+}
+
+@mixin border-top {
+    border: 0.0625rem 0 0 0;
+    border-top: solid $mercury;
+}
+
+@mixin field-styling {
+    @include p-mobile;
+    color: $black;
+    background-color: $alabaster;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    border: 0.0625rem $mercury solid;
+    width: 100%;
+
+    &:focus-visible {
+        border: 0.125rem $brainflix-blue solid;
+    }
+
+    @include tablet {
+        padding-left: 1rem;
+        @include p-tablet__desk;
+        height: 2.8125rem;
+    }
+}
