@@ -3,7 +3,6 @@ import { Link as ScrollLink } from 'react-scroll';
 import "./Header.scss";
 
 const Header = () => {
-    // mergefix
 
     return (
         <header className="header">
