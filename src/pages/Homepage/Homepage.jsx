@@ -68,6 +68,7 @@ const Homepage = () => {
                     <Skill altText="Agile" title="Agile Methodology" />
                     <Skill logoSrc={logoGit} altText="Git" />
                     <Skill altText="Auth" title="User Authentication" />
+                    <Skill altText="APIs" title="REST APIs" />
                     <Skill logoSrc={logoJira} altText="Jira" />
                     <Skill logoSrc={logoMonday} altText="Monday" />
                 </div>
