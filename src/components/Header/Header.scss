@@ -10,11 +10,11 @@
     display: flex;
 
     @include tablet {
-        padding: 0 60px;
+        padding: 0 24px;
     }
 
     @include desktop {
-        padding: 0 260px;
+        padding: 0 32px;
     }
 
     &-nav {
@@ -24,14 +24,27 @@
 
         & ul {
             display: flex;
+
+            li:first-child a {
+                color: $white;
+            }
         }
 
         &__items {
             padding: 0 16px;
-            color: white;
 
             & a {
                 cursor: pointer;
+                color: $silver;
+                font-weight: bold;
+                transition: color 0.2s ease-in-out;
+
+                &:hover {
+                    color: $white;
+                }
+
+
+
             }
         }
 
