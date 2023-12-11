@@ -1,0 +1,35 @@
+@import '../../styles/partials/variables';
+@import '../../styles/partials/mixins';
+
+.projects {
+    margin-top: 52px;
+
+    @include desktop {
+        width: 90%;
+    }
+
+    &__header {
+        font-size: 28px;
+        @include font-bold;
+        margin-bottom: 24px;
+        // padding: 0 8px;
+    }
+
+    &-container {
+        // padding: 0 16px;
+        // display: flex;
+        // justify-content: center;
+
+        @include tablet {
+            padding: 0 16px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        @include desktop {
+            padding: 0 32px;
+            gap: 80px;
+        }
+    }
+}

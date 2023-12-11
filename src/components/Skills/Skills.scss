@@ -1,0 +1,44 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+
+
+.skills {
+    @include desktop {
+        width: 90%;
+    }
+
+    &__header {
+        font-size: 28px;
+        @include font-bold;
+        margin-bottom: 24px;
+        // padding: 0 8px;
+
+        @include tablet {
+            // @include h2-tablet__desk;
+            margin-bottom: 44px;
+        }
+
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); // creates two columns
+        row-gap: 24px;
+        column-gap: 8px;
+        justify-items: center; // centers items in their cells
+        text-align: center;
+        padding: 0 8px;
+
+        @include tablet {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 32px;
+        }
+
+        @include desktop {
+            padding: 0 16px;
+            gap: 40px;
+        }
+    }
+}

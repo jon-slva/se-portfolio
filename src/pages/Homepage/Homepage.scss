@@ -1,99 +1,216 @@
 @import '../../styles/partials/mixins';
 
 main {
-    background: rgb(3, 2, 71);
-    background: radial-gradient(circle, rgba(3, 2, 71, 1) 9%, rgba(0, 0, 50, 1) 100%);
-    padding: 0 20px 60px 20px;
+    padding: 0 16px 60px 16px;
 
     @include tablet {
-        padding: 0 60px 60px 60px;
+        padding: 0 40px 60px 40px;
     }
 
     @include desktop {
-        padding: 0 200px 60px 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 100px 60px 100px;
+    }
+
+    @include desktop-large {
+        padding: 0 100px 60px 100px;
     }
 }
 
 .hero {
-    height: 400px;
-    width: 100%;
+    height: 440px;
+    // width: 100%;
+    padding: 0 3vw;
     display: flex;
     // align-items: flex-start;
 
     @include tablet {
         align-items: center;
-        height: 700px;
+        height: 500px;
+        padding: 0 24px;
     }
 
     @include desktop {
         align-items: center;
         height: 700px;
+        padding: 0 32px;
     }
 
     &__container {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        padding-top: 100px;
+        flex-direction: column;
+        // padding-top: 100px;
         // gap: 4px;
-        width: 100%;
+        // width: 100%;
+        margin-top: 32px;
 
         @include tablet {
+            display: flex;
             align-items: center;
             justify-content: center;
-            gap: 48px;
+            flex-direction: row;
+            padding-top: 100px;
+            gap: 40px;
+            width: 100%;
         }
 
         @include desktop {
             align-items: center;
             justify-content: center;
-            gap: 48px;
+            gap: 40px;
+        }
+    }
+
+    &__breakpoint-wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 4vw;
+        margin-bottom: 24px;
+
+        @include tablet {
+            // max-width: 300px;
+            // display: block;
+        }
+
+        @include desktop {
+            max-width: none;
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+        }
+
+    }
+
+    // Hero Text Visibility
+    &__tablet-title-wrap {
+        display: none;
+
+        @include tablet {
+            display: unset;
+        }
+
+        @include desktop {
+            display: none;
+        }
+
+    }
+
+    &__desktop-title-wrap {
+        display: unset;
+
+        @include tablet {
+            display: none;
+        }
+
+        @include desktop {
+            display: unset;
+        }
+
+        @include desktop-large {
+            min-width: 508px;
         }
     }
 
     &__container-text {
-        width: 400px;
-    }
-
-    &__title {
-        font-size: 40px;
-        line-height: 44px;
-        @include font-bold;
-        margin-bottom: 16px;
+        padding: 0 16px;
 
         @include tablet {
-            font-size: 80px;
-            line-height: 66px;
+            padding: 0;
+            // min-width: 452px;
+        }
+    }
+
+    // Hero Text Styling
+    &__title {
+        font-size: 9vw;
+        line-height: 6vw;
+        @include font-bold;
+        margin-bottom: 8px;
+
+        @include tablet {
+            font-size: 64px;
+            line-height: 40px;
+            margin-bottom: 16px;
         }
 
         @include desktop {
-            font-size: 80px;
-            line-height: 66px;
+            font-size: 60px;
+            line-height: 4.125rem;
+            margin-bottom: 8px;
+        }
+
+        @include desktop-large {
+            font-size: 72px;
+            line-height: 4.125rem;
+            margin-bottom: 16px;
         }
     }
 
     &__subtitle {
-        font-size: 28px;
-        line-height: 33px;
+        font-size: 7vw;
+        line-height: 5vw;
         @include font-light;
-        margin-bottom: 16px;
+        // margin-bottom: 16px;
 
         @include tablet {
-            font-size: 60px;
-            line-height: 44px;
-            // padding: 0 60px 60px 60px;
+            font-size: 48px;
+            line-height: 40px;
+            margin-bottom: 32px;
         }
 
         @include desktop {
-            font-size: 60px;
-            // padding: 0 200px 60px 200px;
+            font-size: 48px;
+        }
+
+        @include desktop-large {
+            font-size: 52px;
         }
     }
 
+    &__bio {
+        // width: 100%;
+        font-size: 16px;
+        // line-height: 22px;
+        @include font-light;
+        margin-bottom: 16px;
+
+
+        @include tablet {
+            font-size: 20px;
+            line-height: 26px;
+            max-width: 500px;
+            margin-bottom: 8px;
+        }
+
+        @include desktop {
+            font-size: 24px;
+            line-height: 33px;
+            // max-width: 450px;
+        }
+    }
+
+
+    // Hero Github Styling
     &__github {
-        font-size: 24px;
+        font-size: 18px;
         line-height: 22px;
         @include font-light;
+
+        @include tablet {
+            font-size: 18px;
+            line-height: 44px;
+        }
+
+        @include desktop {
+            font-size: 24px;
+            line-height: 44px;
+        }
     }
 
     @include tablet {
@@ -126,64 +243,25 @@ main {
         }
     }
 
+
+    // Hero Image Styling
     &__headshot {
         border-radius: 50%;
-        height: 120px;
-        transform: translateX(-8px);
-        box-shadow: 6px 6px 0 2px white;
+        // height: 120px;
+        height: 23vw;
+        box-shadow: 2px 2px 0 1px white;
 
         @include tablet {
-            height: 200px;
+            box-shadow: 6px 6px 0 2px white;
+            max-width: 300px;
+            max-height: 300px;
+            // display: block;
+            // max-height: 300px;
         }
 
         @include desktop {
-            height: 300px;
+            max-width: 300px;
+            margin: 0;
         }
     }
-
-    &__bio {
-        font-size: 14px;
-        line-height: 22px;
-        @include font-light;
-        margin-bottom: 16px;
-
-        border-right: .15rem solid white;
-        margin: 0 auto;
-        animation:
-            typing 3.5s steps(40, end),
-            blink-caret .75s step-end infinite;
-
-        @include tablet {
-            font-size: 24px;
-            line-height: 33px;
-        }
-
-        @include desktop {
-            font-size: 24px;
-            line-height: 33px;
-        }
-    }
-
-    @keyframes typing {
-        from {
-            clip-path: inset(0 100% 0 0);
-        }
-
-        to {
-            clip-path: inset(0);
-        }
-    }
-
-    @keyframes blink-caret {
-
-        from,
-        to {
-            border-color: transparent
-        }
-
-        50% {
-            border-color: orange;
-        }
-    }
-
 }

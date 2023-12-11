@@ -35,9 +35,9 @@ const Skill = ({ logoSrc, altText, title }) => {
 
 
     return (
-        <article className='skills__container--logo-wrap'>
-            {logoSrc ? <img ref={logoRef} className="skills__container--logo" src={logoSrc} alt={altText} /> : null}
-            {title ? <p ref={titleRef} className="skills__container--logo-title">{title}</p> : null}
+        <article className='skill'>
+            {logoSrc ? <img ref={logoRef} className="skill__logo" src={logoSrc} alt={altText} /> : null}
+            {title ? <p ref={titleRef} className="skill__logo-title">{title}</p> : null}
         </article>
     );
 }
