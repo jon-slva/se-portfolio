@@ -3,10 +3,21 @@
 
 
 .skills {
+    @include desktop {
+        width: 90%;
+    }
 
     &__header {
-        @include h2-tablet__desk;
-        margin-bottom: 44px;
+        font-size: 28px;
+        @include font-bold;
+        margin-bottom: 24px;
+        // padding: 0 8px;
+
+        @include tablet {
+            // @include h2-tablet__desk;
+            margin-bottom: 44px;
+        }
+
     }
 
     &__container {
@@ -16,6 +27,7 @@
         column-gap: 8px;
         justify-items: center; // centers items in their cells
         text-align: center;
+        padding: 0 8px;
 
         @include tablet {
             display: flex;

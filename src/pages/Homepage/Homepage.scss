@@ -8,6 +8,10 @@ main {
     }
 
     @include desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 0 100px 60px 100px;
     }
 
@@ -17,15 +21,15 @@ main {
 }
 
 .hero {
-    height: 400px;
-    width: 100%;
-    padding: 0 16px;
+    height: 440px;
+    // width: 100%;
+    padding: 0 3vw;
     display: flex;
     // align-items: flex-start;
 
     @include tablet {
         align-items: center;
-        height: 600px;
+        height: 500px;
         padding: 0 24px;
     }
 
@@ -42,28 +46,45 @@ main {
         flex-direction: column;
         // padding-top: 100px;
         // gap: 4px;
-        width: 100%;
+        // width: 100%;
+        margin-top: 32px;
 
         @include tablet {
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: row;
             padding-top: 100px;
-            gap: 48px;
+            gap: 40px;
             width: 100%;
         }
 
         @include desktop {
             align-items: center;
             justify-content: center;
-            gap: 48px;
+            gap: 40px;
         }
     }
 
-    &__mobile-container {
+    &__breakpoint-wrap {
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
+        gap: 4vw;
+        margin-bottom: 24px;
+
+        @include tablet {
+            // max-width: 300px;
+            // display: block;
+        }
+
+        @include desktop {
+            max-width: none;
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+        }
+
     }
 
     // Hero Text Visibility
@@ -77,6 +98,7 @@ main {
         @include desktop {
             display: none;
         }
+
     }
 
     &__desktop-title-wrap {
@@ -89,18 +111,27 @@ main {
         @include desktop {
             display: unset;
         }
+
+        @include desktop-large {
+            min-width: 508px;
+        }
     }
 
     &__container-text {
-        width: 600px;
+        padding: 0 16px;
+
+        @include tablet {
+            padding: 0;
+            // min-width: 452px;
+        }
     }
 
     // Hero Text Styling
     &__title {
-        font-size: 40px;
-        line-height: 2.75rem;
+        font-size: 9vw;
+        line-height: 6vw;
         @include font-bold;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
 
         @include tablet {
             font-size: 64px;
@@ -111,23 +142,26 @@ main {
         @include desktop {
             font-size: 60px;
             line-height: 4.125rem;
+            margin-bottom: 8px;
         }
 
         @include desktop-large {
             font-size: 72px;
             line-height: 4.125rem;
+            margin-bottom: 16px;
         }
     }
 
     &__subtitle {
-        font-size: 24px;
-        line-height: 33px;
+        font-size: 7vw;
+        line-height: 5vw;
         @include font-light;
-        margin-bottom: 16px;
+        // margin-bottom: 16px;
 
         @include tablet {
             font-size: 48px;
             line-height: 40px;
+            margin-bottom: 32px;
         }
 
         @include desktop {
@@ -140,21 +174,24 @@ main {
     }
 
     &__bio {
-        width: 100%;
-        font-size: 14px;
-        line-height: 22px;
+        // width: 100%;
+        font-size: 16px;
+        // line-height: 22px;
         @include font-light;
         margin-bottom: 16px;
 
 
         @include tablet {
-            font-size: 18px;
+            font-size: 20px;
             line-height: 26px;
+            max-width: 500px;
+            margin-bottom: 8px;
         }
 
         @include desktop {
             font-size: 24px;
             line-height: 33px;
+            // max-width: 450px;
         }
     }
 
@@ -210,19 +247,21 @@ main {
     // Hero Image Styling
     &__headshot {
         border-radius: 50%;
-        height: 120px;
-        min-width: 120px;
-        box-shadow: 6px 6px 0 2px white;
+        // height: 120px;
+        height: 23vw;
+        box-shadow: 2px 2px 0 1px white;
 
         @include tablet {
-            height: 200px;
-            min-width: 200px;
-            margin-bottom: 48px;
+            box-shadow: 6px 6px 0 2px white;
+            max-width: 300px;
+            max-height: 300px;
+            // display: block;
+            // max-height: 300px;
         }
 
         @include desktop {
-            transform: translateX(-8px);
-            height: 300px;
+            max-width: 300px;
+            margin: 0;
         }
     }
 }
