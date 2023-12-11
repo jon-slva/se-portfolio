@@ -4,11 +4,15 @@ main {
     padding: 0 16px 60px 16px;
 
     @include tablet {
-        padding: 0 60px 60px 60px;
+        padding: 0 40px 60px 40px;
     }
 
     @include desktop {
-        padding: 0 200px 60px 200px;
+        padding: 0 100px 60px 100px;
+    }
+
+    @include desktop-large {
+        padding: 0 100px 60px 100px;
     }
 }
 
@@ -33,16 +37,20 @@ main {
 
     &__container {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        padding-top: 100px;
+        flex-direction: column;
+        // padding-top: 100px;
         // gap: 4px;
         width: 100%;
 
         @include tablet {
+            display: flex;
             align-items: center;
             justify-content: center;
+            padding-top: 100px;
             gap: 48px;
+            width: 100%;
         }
 
         @include desktop {
@@ -52,8 +60,19 @@ main {
         }
     }
 
+    &__mobile-container {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
     // Hero Text Visibility
     &__tablet-title-wrap {
+        display: none;
+
+        @include tablet {
+            display: unset;
+        }
 
         @include desktop {
             display: none;
@@ -61,7 +80,11 @@ main {
     }
 
     &__desktop-title-wrap {
-        display: none;
+        display: unset;
+
+        @include tablet {
+            display: none;
+        }
 
         @include desktop {
             display: unset;
@@ -117,6 +140,7 @@ main {
     }
 
     &__bio {
+        width: 100%;
         font-size: 14px;
         line-height: 22px;
         @include font-light;
@@ -187,10 +211,12 @@ main {
     &__headshot {
         border-radius: 50%;
         height: 120px;
+        min-width: 120px;
         box-shadow: 6px 6px 0 2px white;
 
         @include tablet {
             height: 200px;
+            min-width: 200px;
             margin-bottom: 48px;
         }
 

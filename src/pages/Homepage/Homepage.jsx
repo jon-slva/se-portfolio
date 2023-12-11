@@ -15,13 +15,15 @@ const Homepage = () => {
         <>
             <section className="hero" >
                 <div className="hero__container">
-                    <div className='hero__desktop-title-wrap'>
-                        <h1 className="hero__title">Jonathan&nbsp;Silva</h1>
-                        <h2 className="hero__subtitle">Software Engineer</h2>
-                        {/* <h2 className="hero__subtitle">Fullstack Developer</h2> */}
-                    </div>
+                    <div className="hero__mobile-container">
+                        <div className='hero__desktop-title-wrap'>
+                            <h1 className="hero__title">Jonathan&nbsp;Silva</h1>
+                            <h2 className="hero__subtitle">Software Engineer</h2>
+                            {/* <h2 className="hero__subtitle">Fullstack Developer</h2> */}
+                        </div>
 
-                    <img className="hero__headshot" src={headshot1} alt="" />
+                        <img className="hero__headshot" src={headshot1} alt="" />
+                    </div>
 
                     <div className="hero__container-text">
                         <div className='hero__tablet-title-wrap'>
