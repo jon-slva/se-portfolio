@@ -8,8 +8,17 @@ import resumePdf from '../../assets/Jonathan-Silva-Software-Engineer-Resume-2023
 const Header = () => {
     const [showResume, setShowResume] = useState(false);
     const [showContact, setShowContact] = useState(false);
-    const mobileBreakpoint = 768;
-    const zoomLevel = window.innerWidth <= mobileBreakpoint ? 50 : 70;
+    const mobileBreakpoint = 768; // Mobile breakpoint
+    const tabletBreakpoint = 1280; // Tablet breakpoint
+    let zoomLevel = undefined;
+
+    if (window.innerWidth <= mobileBreakpoint) {
+        zoomLevel = 40;
+    } else if (window.innerWidth <= tabletBreakpoint) {
+        zoomLevel = 60;
+    } else {
+        zoomLevel = 80;
+    }
 
     const handleshowResume = (e) => {
         e.preventDefault();

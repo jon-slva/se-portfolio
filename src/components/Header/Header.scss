@@ -71,7 +71,7 @@
 
     &__pdf {
         width: 90vw;
-        height: calc(90vw * 11 / 8.5); // 90% of the viewport width times the aspect ratio (11 / 8.5
+        height: calc(94vw * 11 / 8.5); // 90% of the viewport width times the aspect ratio (11 / 8.5
         margin-bottom: 32px;
 
         @include tablet {
