@@ -10,8 +10,6 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Homepage />} />
-          <Route path='/resume' />
-          <Route path='/contact' />
           <Route path='/404' />
         </Routes>
       </BrowserRouter>

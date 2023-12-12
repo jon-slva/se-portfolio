@@ -22,32 +22,30 @@
         align-items: center;
         height: 100%;
 
-        & ul {
+        ul {
             display: flex;
 
-            li:first-child a {
-                color: $white;
-            }
-        }
+            li {
+                padding: 0 16px;
 
-        &__items {
-            padding: 0 16px;
-
-            & a {
-                cursor: pointer;
-                color: $silver;
-                font-weight: bold;
-                transition: color 0.2s ease-in-out;
-
-                &:hover {
+                a {
+                    cursor: pointer;
                     color: $white;
+                    font-weight: bold;
+                    transition: color 0.2s ease-in-out;
                 }
-
-
-
             }
         }
 
+        &:hover {
+            li a {
+                color: $silver;
+            }
+        }
+
+        li a:hover {
+            color: $white;
+        }
     }
 }
 

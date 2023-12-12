@@ -10,7 +10,6 @@ const Header = () => {
     const [showContact, setShowContact] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
 
-
     const mobileBreakpoint = 768; // Mobile breakpoint
     const tabletBreakpoint = 1280; // Tablet breakpoint
     let zoomLevel = undefined;
@@ -53,15 +52,16 @@ const Header = () => {
         }, 500);
     };
 
+
     return (
         <>
             <header className="header">
                 <nav className="header-nav">
                     <ul>
-                        <li className="header-nav__items"><Link to="/">Home</Link></li>
+                        {/* <li className="header-nav__items"><Link to="/">Home</Link></li> */}
                         <li className="header-nav__items"><ScrollLink to="projects" smooth={true} duration={1000} offset={-40}>Projects</ScrollLink></li>
-                        <li className="header-nav__items"><Link to="/resume" onClick={handleShowResume}>Resume</Link></li>
-                        <li className="header-nav__items"><Link to="/contact" onClick={handleContact}>Contact</Link></li>
+                        <li className="header-nav__items"><a onClick={handleShowResume}>Resume</a></li>
+                        <li className="header-nav__items"><a onClick={handleContact}>Contact</a></li>
                     </ul>
                 </nav>
             </header>
