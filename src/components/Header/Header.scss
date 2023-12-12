@@ -10,11 +10,11 @@
     display: flex;
 
     @include tablet {
-        padding: 0 60px;
+        padding: 0 24px;
     }
 
     @include desktop {
-        padding: 0 260px;
+        padding: 0 32px;
     }
 
     &-nav {
@@ -24,16 +24,66 @@
 
         & ul {
             display: flex;
+
+            li:first-child a {
+                color: $white;
+            }
         }
 
         &__items {
             padding: 0 16px;
-            color: white;
 
             & a {
                 cursor: pointer;
+                color: $silver;
+                font-weight: bold;
+                transition: color 0.2s ease-in-out;
+
+                &:hover {
+                    color: $white;
+                }
+
+
+
             }
         }
 
     }
+}
+
+.resume-modal {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8); // Black with 80% opacity
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2dvh;
+
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    &__button {
+        cursor: pointer;
+
+    }
+
+
+    &__pdf {
+        width: 90vw;
+        height: calc(90vw * 11 / 8.5); // 90% of the viewport width times the aspect ratio (11 / 8.5
+
+        @include tablet {
+            width: 60vw;
+            height: calc(60vw * 11 / 8.5); // 90% of the viewport width times the aspect ratio (11 / 8.5
+        }
+
+        @include desktop {
+            width: calc(70vh * 8.5 / 11); // 80% of the viewport height times the aspect ratio (8.5 / 11)
+            height: 73vh;
+        }
+
+    }
+
 }
