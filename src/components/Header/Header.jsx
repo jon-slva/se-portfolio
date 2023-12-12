@@ -31,7 +31,7 @@ const Header = () => {
             {showResume && (
                 <div className="resume-modal">
                     <button className="resume-modal__button" onClick={handleCloseResume}>X to close</button>
-                    <iframe className="resume-modal__pdf" src={resumePdf} title="resume"></iframe>
+                    <iframe className="resume-modal__pdf" src={`${resumePdf}#zoom=75`} title="resume"></iframe>
                     <a href={resumePdf} download>Download Resume</a>
                 </div>
             )}
