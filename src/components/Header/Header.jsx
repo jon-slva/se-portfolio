@@ -8,6 +8,8 @@ import resumePdf from '../../assets/Jonathan-Silva-Software-Engineer-Resume-2023
 const Header = () => {
     const [showResume, setShowResume] = useState(false);
     const [showContact, setShowContact] = useState(false);
+    const mobileBreakpoint = 768;
+    const zoomLevel = window.innerWidth <= mobileBreakpoint ? 50 : 70;
 
     const handleshowResume = (e) => {
         e.preventDefault();
@@ -42,8 +44,7 @@ const Header = () => {
             {showResume && (
                 <div className="modal">
                     <button className="modal__button" onClick={handleCloseResume}>Close</button>
-                    <iframe className="modal__pdf" src={`${resumePdf}#zoom=55`} title="resume"></iframe>
-                    <a href={resumePdf} className="modal__button" download>Download Resume</a>
+                    <iframe className="modal__pdf" src={`${resumePdf}#zoom=${zoomLevel}`} title="resume"></iframe>                    <a href={resumePdf} className="modal__button" download>Download Resume</a>
                 </div>
             )}
             {showContact && (
