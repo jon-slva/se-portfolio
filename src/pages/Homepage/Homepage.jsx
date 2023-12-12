@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import headshot1 from '../../assets/images/me.jpg';
 
-
 import logoGithub from '../../assets/images/skills/github.svg';
 
 import "./Homepage.scss";
