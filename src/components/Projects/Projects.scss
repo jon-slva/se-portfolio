@@ -2,29 +2,30 @@
 @import '../../styles/partials/mixins';
 
 .projects {
-    margin-top: 52px;
+    margin-top: 3.25rem;
 
     @include desktop {
         width: 90%;
     }
 
     &__header {
-        font-size: 40px;
+        font-size: 2.5rem;
         @include font-bold;
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
+        text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.4);
     }
 
     &-container {
         @include tablet {
-            padding: 0 16px;
+            padding: 0 1rem;
             display: flex;
             justify-content: center;
-            gap: 40px;
+            gap: 2.5rem;
         }
 
         @include desktop {
-            padding: 0 32px;
-            gap: 80px;
+            padding: 0 2rem;
+            gap: 5rem;
         }
     }
 }

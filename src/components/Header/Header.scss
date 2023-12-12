@@ -3,18 +3,17 @@
 
 
 .header {
-    height: 60px;
+    height: 3.75rem;
     width: 100%;
-    // padding: 0 16px;
     position: absolute;
     display: flex;
 
     @include tablet {
-        padding: 0 24px;
+        padding: 0 1.5rem;
     }
 
     @include desktop {
-        padding: 0 32px;
+        padding: 0 2rem;
     }
 
     &-nav {
@@ -26,13 +25,14 @@
             display: flex;
 
             li {
-                padding: 0 16px;
+                padding: 0 1rem;
 
                 a {
                     cursor: pointer;
                     color: $white;
                     font-weight: bold;
                     transition: color 0.2s ease-in-out;
+                    text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.4);
                 }
             }
         }
@@ -75,18 +75,16 @@
     &__pdf {
         width: 90vw;
         height: calc(94vw * 11 / 8.5); // 90% of the viewport width times the aspect ratio (11 / 8.5
-        margin-bottom: 32px;
+        margin-bottom: 2rem;
 
         @include tablet {
             width: 60vw;
             height: calc(60vw * 11 / 8.5); // 90% of the viewport width times the aspect ratio (11 / 8.5
-            // margin-bottom: 32px;
         }
 
         @include desktop {
             width: calc(70vh * 8.5 / 11); // 80% of the viewport height times the aspect ratio (8.5 / 11)
             height: 73vh;
-            // margin-bottom: 32px;
         }
 
     }
@@ -98,26 +96,26 @@
         width: fit-content;
         height: auto;
         overflow: visible;
-        padding: 0 32px;
-        padding-bottom: 24px;
+        padding: 0 2rem;
+        padding-bottom: 1.5rem;
         border-radius: 6px;
 
 
         @include tablet {
-            width: 400px;
-            height: 260px;
-            padding: 0 48px;
+            width: 25rem;
+            height: 16.25rem;
+            padding: 0 3rem;
         }
 
         &--header {
             @include h2-mobile;
-            margin-bottom: 8px;
-            margin-top: 24px;
+            margin-bottom: 0.5rem;
+            margin-top: 1.5rem;
 
             @include tablet {
                 @include h2-tablet__desk;
-                margin-bottom: 16px;
-                margin-top: 40px;
+                margin-bottom: 1rem;
+                margin-top: 2.5rem;
             }
         }
 

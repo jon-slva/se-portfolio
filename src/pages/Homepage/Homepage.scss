@@ -1,10 +1,10 @@
 @import '../../styles/partials/mixins';
 
 main {
-    padding: 0 32px 60px 32px;
+    padding: 0 2rem 3.75rem 2rem;
 
     @include tablet {
-        padding: 0 40px 60px 40px;
+        padding: 0 2.5rem 3.75rem 2.5rem;
     }
 
     @include desktop {
@@ -12,31 +12,29 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 100px 60px 100px;
+        padding: 0 6.25rem 3.75rem 6.25rem;
     }
 
     @include desktop-large {
-        padding: 0 100px 60px 100px;
+        padding: 0 6.25rem 3.75rem 6.25rem;
     }
 }
 
 .hero {
-    height: 440px;
-    // width: 100%;
+    height: 27.5rem;
     padding: 0 3vw;
     display: flex;
-    // align-items: flex-start;
 
     @include tablet {
         align-items: center;
-        height: 500px;
-        padding: 0 24px;
+        height: 31.25rem;
+        padding: 0 1.5rem;
     }
 
     @include desktop {
         align-items: center;
-        height: 700px;
-        padding: 0 32px;
+        height: 43.75rem;
+        padding: 0 2rem;
     }
 
     &__container {
@@ -44,25 +42,22 @@ main {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        // padding-top: 100px;
-        // gap: 4px;
-        // width: 100%;
-        margin-top: 32px;
+        margin-top: 2rem;
 
         @include tablet {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: row;
-            padding-top: 100px;
-            gap: 40px;
+            padding-top: 6.25rem;
+            gap: 2.5rem;
             width: 100%;
         }
 
         @include desktop {
             align-items: center;
             justify-content: center;
-            gap: 40px;
+            gap: 2.5rem;
         }
     }
 
@@ -71,18 +66,15 @@ main {
         align-items: center;
         flex-direction: row-reverse;
         gap: 4vw;
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
 
-        @include tablet {
-            // max-width: 300px;
-            // display: block;
-        }
+        @include tablet {}
 
         @include desktop {
             max-width: none;
             display: flex;
             flex-direction: row;
-            gap: 32px;
+            gap: 2rem;
         }
 
     }
@@ -113,16 +105,15 @@ main {
         }
 
         @include desktop-large {
-            min-width: 508px;
+            min-width: 31.75rem;
         }
     }
 
     &__container-text {
-        padding: 0 16px;
+        padding: 0 1rem;
 
         @include tablet {
             padding: 0;
-            // min-width: 452px;
         }
     }
 
@@ -131,24 +122,24 @@ main {
         font-size: 9vw;
         line-height: 6vw;
         @include font-bold;
-        margin-bottom: 8px;
+        margin-bottom: 0.5rem;
 
         @include tablet {
-            font-size: 64px;
-            line-height: 40px;
-            margin-bottom: 16px;
+            font-size: 4rem;
+            line-height: 2.5rem;
+            margin-bottom: 1rem;
         }
 
         @include desktop {
-            font-size: 60px;
+            font-size: 3.75rem;
             line-height: 4.125rem;
-            margin-bottom: 8px;
+            margin-bottom: 0.5rem;
         }
 
         @include desktop-large {
-            font-size: 72px;
+            font-size: 4.5rem;
             line-height: 4.125rem;
-            margin-bottom: 16px;
+            margin-bottom: 1rem;
         }
     }
 
@@ -156,90 +147,86 @@ main {
         font-size: 7vw;
         line-height: 5vw;
         @include font-light;
-        // margin-bottom: 16px;
 
         @include tablet {
-            font-size: 48px;
-            line-height: 40px;
-            margin-bottom: 32px;
+            font-size: 3rem;
+            line-height: 2.5rem;
+            margin-bottom: 2rem;
         }
 
         @include desktop {
-            font-size: 48px;
+            font-size: 3rem;
         }
 
         @include desktop-large {
-            font-size: 52px;
+            font-size: 3.25rem;
         }
     }
 
     &__bio {
-        // width: 100%;
-        font-size: 16px;
-        // line-height: 22px;
+        font-size: 1rem;
         @include font-light;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
 
 
         @include tablet {
-            font-size: 20px;
-            line-height: 26px;
-            max-width: 500px;
-            margin-bottom: 8px;
+            font-size: 1.25rem;
+            line-height: 1.625rem;
+            max-width: 31.25rem;
+            margin-bottom: 0.5rem;
         }
 
         @include desktop {
-            font-size: 24px;
-            line-height: 33px;
-            // max-width: 450px;
+            font-size: 1.5rem;
+            line-height: 2.0625rem;
         }
     }
 
 
     // Hero Github Styling
     &__github {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
         @include font-light;
 
         @include tablet {
-            font-size: 18px;
-            line-height: 44px;
+            font-size: 1.125rem;
+            line-height: 2.75rem;
         }
 
         @include desktop {
-            font-size: 24px;
-            line-height: 44px;
+            font-size: 1.5rem;
+            line-height: 2.75rem;
         }
     }
 
     @include tablet {
-        font-size: 40px;
-        line-height: 44px;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
         @include font-light;
     }
 
     @include desktop {
-        font-size: 40px;
-        line-height: 44px;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
         @include font-light;
     }
 
     &__github-logo {
         display: inline-block;
-        height: 30px;
-        width: 30px;
-        margin-left: 8px;
-        transform: translateY(8px);
+        height: 1.875rem;
+        width: 1.875rem;
+        margin-left: 0.5rem;
+        transform: translateY(0.5rem);
 
         @include tablet {
-            height: 40px;
-            width: 40px;
+            height: 2.5rem;
+            width: 2.5rem;
         }
 
         @include desktop {
-            height: 40px;
-            width: 40px;
+            height: 2.5rem;
+            width: 2.5rem;
         }
     }
 
@@ -247,20 +234,17 @@ main {
     // Hero Image Styling
     &__headshot {
         border-radius: 50%;
-        // height: 120px;
         height: 23vw;
         box-shadow: 2px 2px 0 1px white;
 
         @include tablet {
             box-shadow: 6px 6px 0 2px white;
-            max-width: 300px;
-            max-height: 300px;
-            // display: block;
-            // max-height: 300px;
+            max-width: 18.75rem;
+            max-height: 18.75rem;
         }
 
         @include desktop {
-            max-width: 300px;
+            max-width: 18.75rem;
             margin: 0;
         }
     }
