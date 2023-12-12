@@ -153,13 +153,13 @@
 }
 
 @mixin h2-mobile {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.25rem;
     @include font-bold();
 }
 
 @mixin h3-mobile {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.125rem;
     @include font-bold();
 }
@@ -235,5 +235,26 @@
         padding-left: 1rem;
         @include p-tablet__desk;
         height: 2.8125rem;
+    }
+}
+
+
+//Buttons
+
+@mixin modal-button-tablet-desktop {
+    cursor: pointer;
+    padding: 12px 24px;
+    background-color: #272475;
+    border-radius: 6px;
+    margin-bottom: 32px;
+    @include font-bold;
+
+    &:hover {
+        background-color: #3a3a9b;
+    }
+
+    &:active {
+        background-color: #000032;
+        border-radius: 6px;
     }
 }
