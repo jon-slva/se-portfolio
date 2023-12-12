@@ -8,6 +8,9 @@ import resumePdf from '../../assets/Jonathan-Silva-Software-Engineer-Resume-2023
 const Header = () => {
     const [showResume, setShowResume] = useState(false);
     const [showContact, setShowContact] = useState(false);
+    const [isClosing, setIsClosing] = useState(false);
+
+
     const mobileBreakpoint = 768; // Mobile breakpoint
     const tabletBreakpoint = 1280; // Tablet breakpoint
     let zoomLevel = undefined;
@@ -20,22 +23,34 @@ const Header = () => {
         zoomLevel = 80;
     }
 
-    const handleshowResume = (e) => {
+    const handleShowResume = (e) => {
         e.preventDefault();
+        setIsClosing(false);
         setShowResume(true)
     };
 
     const handleCloseResume = (e) => {
-        setShowResume(false);
+        e.preventDefault();
+        setIsClosing(true);
+        setTimeout(() => {
+            setIsClosing(false);
+            setShowResume(false);
+        }, 500); // Adjust this to match the duration of your fade-out animation
     };
 
     const handleContact = (e) => {
         e.preventDefault();
+        setIsClosing(false);
         setShowContact(true)
     }
 
     const handleCloseContact = (e) => {
-        setShowContact(false);
+        e.preventDefault();
+        setIsClosing(true);
+        setTimeout(() => {
+            setIsClosing(false);
+            setShowContact(false);
+        }, 500);
     };
 
     return (
@@ -45,19 +60,20 @@ const Header = () => {
                     <ul>
                         <li className="header-nav__items"><Link to="/">Home</Link></li>
                         <li className="header-nav__items"><ScrollLink to="projects" smooth={true} duration={1000} offset={-40}>Projects</ScrollLink></li>
-                        <li className="header-nav__items"><Link to="/resume" onClick={handleshowResume}>Resume</Link></li>
+                        <li className="header-nav__items"><Link to="/resume" onClick={handleShowResume}>Resume</Link></li>
                         <li className="header-nav__items"><Link to="/contact" onClick={handleContact}>Contact</Link></li>
                     </ul>
                 </nav>
             </header>
             {showResume && (
-                <div className="modal">
+                <div className={`modal ${isClosing ? 'closing' : ''}`}>
                     <button className="modal__button" onClick={handleCloseResume}>Close</button>
-                    <iframe className="modal__pdf" src={`${resumePdf}#zoom=${zoomLevel}`} title="resume"></iframe>                    <a href={resumePdf} className="modal__button" download>Download Resume</a>
+                    <iframe className="modal__pdf" src={`${resumePdf}#zoom=${zoomLevel}`} title="resume"></iframe>
+                    <a href={resumePdf} className="modal__button" download>Download Resume</a>
                 </div>
             )}
             {showContact && (
-                <div className="modal">
+                <div className={`modal ${isClosing ? 'closing' : ''}`}>
                     <button className="modal__button" onClick={handleCloseContact}>Close</button>
                     <section className="modal__contact">
                         <h2 className="modal__contact--header">Email</h2>
