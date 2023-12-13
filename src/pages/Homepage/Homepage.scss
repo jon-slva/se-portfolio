@@ -123,7 +123,7 @@ main {
         line-height: 6vw;
         @include font-bold;
         margin-bottom: 0.5rem;
-        text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.4);
+        text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.4);
 
         @include tablet {
             font-size: 4rem;
@@ -146,18 +146,29 @@ main {
 
     &__subtitle {
         font-size: 7vw;
-        line-height: 5vw;
+        height: auto;
+        // line-height: 5vw;
         @include font-light;
-        text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.4);
+        text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.4);
+        border-right: .1em solid;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 15ch;
+        /* Adjust as needed */
+        animation: typingAndBackspacing 11s steps(60, end) infinite,
+            blink-caret .75s step-end infinite;
+        ;
+
 
         @include tablet {
             font-size: 3rem;
-            line-height: 2.5rem;
+            line-height: 3.2rem;
             margin-bottom: 2rem;
         }
 
         @include desktop {
             font-size: 3rem;
+            line-height: 3.4rem;
         }
 
         @include desktop-large {
@@ -165,11 +176,37 @@ main {
         }
     }
 
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes backspace {
+        from {
+            width: 100%;
+        }
+
+        to {
+            width: 0;
+        }
+    }
+
+    @keyframes blink-caret {
+        50% {
+            border-color: transparent;
+        }
+    }
+
     &__bio {
         font-size: 1rem;
         @include font-light;
         margin-bottom: 1rem;
-        text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.4);
+        text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.4);
 
         @include tablet {
             font-size: 1.25rem;
@@ -190,8 +227,7 @@ main {
         font-size: 1.125rem;
         line-height: 1.375rem;
         @include font-light;
-        text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.4);
-
+        text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.4);
 
         @include tablet {
             font-size: 1.125rem;
@@ -252,5 +288,26 @@ main {
             max-width: 18.75rem;
             margin: 0;
         }
+    }
+}
+
+
+// Animations
+
+@keyframes typingAndBackspacing {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    78% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
     }
 }

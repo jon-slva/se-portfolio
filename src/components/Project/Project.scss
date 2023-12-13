@@ -15,12 +15,18 @@
         font-size: 1.5rem;
         margin-bottom: 1rem;
         margin-top: 0;
-        text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.4);
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
         position: relative;
 
         @include tablet {
             @include h2-tablet__desk;
             font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        @include desktop {
+            // @include h2-tablet__desk;
+            font-size: 32px;
             margin-bottom: 20px;
         }
     }
@@ -69,5 +75,10 @@
                 height: 1.5rem;
             }
         }
+
+        &--github-label {
+            text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.4);
+        }
+
     }
 }

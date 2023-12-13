@@ -10,13 +10,13 @@ const Project = ({ title, description, imgSrc, github1, github2 }) => {
             <div className='project__links'>
                 {github1.link ? <a href={github1.link} className="project__link">
                     <img className="project__link--github-logo" src={logoGithub} alt="" />
-                    <p>
+                    <p className="project__link--github-label">
                         {github1.label}
                     </p>
                 </a> : null}
                 {github2.link ? <a href={github2.link} className="project__link">
                     <img className="project__link--github-logo" src={logoGithub} alt="" />
-                    <p>
+                    <p className="project__link--github-label">
                         {github2.label}
                     </p>
                 </a> : null}
