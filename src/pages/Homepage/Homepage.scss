@@ -292,17 +292,17 @@ main {
 }
 
 .footer {
-    padding: 32px;
+    padding: 2rem;
     background-color: #192b55;
     color: #fff;
     text-align: center;
 
     @include tablet {
-        padding: 40px 56px;
+        padding: 2.5rem 3.5rem;
     }
 
     @include desktop {
-        padding: 40px 156px;
+        padding: 2.5rem 9.75rem;
     }
 
     &__info {
@@ -310,16 +310,16 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        gap: 10px;
+        gap: 0.625rem;
 
         @include tablet {
             flex-direction: row;
-            gap: 40px;
+            gap: 2.5rem;
         }
 
         @include desktop {
             justify-content: center;
-            gap: 100px;
+            gap: 6.25rem;
         }
     }
 

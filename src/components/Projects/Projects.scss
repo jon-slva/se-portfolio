@@ -22,7 +22,7 @@
 
     &-container {
         @include tablet {
-            padding: 0 16px;
+            padding: 0 1rem;
             display: flex;
             justify-content: center;
             gap: 3rem;
@@ -34,17 +34,15 @@
         }
 
         &__svg-image {
-            height: 34px;
-            // transform: translateY(12px);
+            height: 2.125rem;
             display: inline-block;
             filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
             position: absolute;
-            top: -10px;
-            // transform: translateX(5px);
+            top: -0.625rem;
             animation: bounce 1s infinite;
 
             @include tablet {
-                height: 40px;
+                height: 2.5rem;
             }
 
         }
