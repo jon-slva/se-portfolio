@@ -43,9 +43,15 @@ const Homepage = () => {
             <main>
                 <Skills />
                 <Projects />
-
-
             </main>
+
+            <footer className="footer">
+                <div className="footer__info">
+                    <p className="footer__name">Jonathan Silva</p>
+                    <p className="footer__phone">1(631) 327-4452</p>
+                    <a href="mailto:jonathan.silva167@gmail.com" className="footer__email">jonathan.silva167@gmail.com</a>
+                </div>
+            </footer>
         </>
     )
 }

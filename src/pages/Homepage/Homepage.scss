@@ -1,10 +1,10 @@
 @import '../../styles/partials/mixins';
 
 main {
-    padding: 0 2rem 3.75rem 2rem;
+    padding: 0 2rem 0 2rem;
 
     @include tablet {
-        padding: 0 2.5rem 3.75rem 2.5rem;
+        padding: 0 2.5rem 0 2.5rem;
     }
 
     @include desktop {
@@ -12,7 +12,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 6.25rem 3.75rem 6.25rem;
+        padding: 0 6.25rem 0 6.25rem;
     }
 
     @include desktop-large {
@@ -291,6 +291,44 @@ main {
     }
 }
 
+.footer {
+    padding: 32px;
+    background-color: #192b55;
+    color: #fff;
+    text-align: center;
+
+    @include tablet {
+        padding: 40px 56px;
+    }
+
+    @include desktop {
+        padding: 40px 156px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+
+        @include tablet {
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        @include desktop {
+            justify-content: center;
+            gap: 100px;
+        }
+    }
+
+    &__name,
+    &__phone,
+    &__email {
+        margin: 0;
+    }
+}
 
 // Animations
 
