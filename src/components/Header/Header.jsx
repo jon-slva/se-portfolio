@@ -58,7 +58,6 @@ const Header = () => {
             <header className="header">
                 <nav className="header-nav">
                     <ul>
-                        {/* <li className="header-nav__items"><Link to="/">Home</Link></li> */}
                         <li className="header-nav__items"><ScrollLink to="projects" smooth={true} duration={1000} offset={-40}>Projects</ScrollLink></li>
                         <li className="header-nav__items"><a onClick={handleShowResume}>Resume</a></li>
                         <li className="header-nav__items"><a onClick={handleContact}>Contact</a></li>

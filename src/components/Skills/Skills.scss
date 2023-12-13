@@ -8,14 +8,13 @@
     }
 
     &__header {
-        font-size: 40px;
+        font-size: 2.5rem;
         @include font-bold;
-        margin-bottom: 24px;
-        // padding: 0 8px;
+        margin-bottom: 1.5rem;
+        text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.4);
 
         @include tablet {
-            // @include h2-tablet__desk;
-            margin-bottom: 44px;
+            margin-bottom: 2.75rem;
         }
 
     }
@@ -23,22 +22,22 @@
     &__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr); // creates two columns
-        row-gap: 24px;
-        column-gap: 8px;
-        justify-items: center; // centers items in their cells
+        row-gap: 1.5rem;
+        column-gap: 0.5rem;
+        justify-items: center;
         text-align: center;
-        padding: 0 8px;
+        padding: 0 0.5rem;
 
         @include tablet {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 32px;
+            gap: 2rem;
         }
 
         @include desktop {
-            padding: 0 16px;
-            gap: 40px;
+            padding: 0 1rem;
+            gap: 2.5rem;
         }
     }
 }
