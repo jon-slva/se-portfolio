@@ -2,21 +2,21 @@
 @import '../../styles/partials/mixins';
 
 .projects {
-    margin-top: 56px;
+    margin-top: 3.5rem;
 
     @include desktop {
         width: 90%;
     }
 
     &__header {
-        font-size: 40px;
+        font-size: 2.5rem;
         @include font-bold;
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
         text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.4);
 
         @include tablet {
-            font-size: 40px;
-            margin-bottom: 44px;
+            font-size: 2.5rem;
+            margin-bottom: 2.75rem;
         }
     }
 
@@ -25,7 +25,7 @@
             padding: 0 16px;
             display: flex;
             justify-content: center;
-            gap: 48px;
+            gap: 3rem;
         }
 
         @include desktop {
@@ -65,11 +65,11 @@
         li {
             padding-left: 1rem;
             text-indent: -1rem;
-            margin-bottom: 8px;
+            margin-bottom: 0.5rem;
 
             @include tablet {
-                line-height: 20px;
-                margin-bottom: 4px;
+                line-height: 1.25rem;
+                margin-bottom: 0.25rem;
             }
         }
     }
