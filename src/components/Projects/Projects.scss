@@ -2,25 +2,30 @@
 @import '../../styles/partials/mixins';
 
 .projects {
-    margin-top: 3.25rem;
+    margin-top: 56px;
 
     @include desktop {
         width: 90%;
     }
 
     &__header {
-        font-size: 2.5rem;
+        font-size: 40px;
         @include font-bold;
-        margin-bottom: 1.5rem;
+        margin-bottom: 24px;
         text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.4);
+
+        @include tablet {
+            font-size: 40px;
+            margin-bottom: 44px;
+        }
     }
 
     &-container {
         @include tablet {
-            padding: 0 1rem;
+            padding: 0 16px;
             display: flex;
             justify-content: center;
-            gap: 2.5rem;
+            gap: 48px;
         }
 
         @include desktop {
@@ -33,6 +38,9 @@
             transform: translateY(12px);
             display: inline-block;
             filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+            position: absolute;
+            top: -10px;
+            transform: translateX(5px)
         }
     }
 
@@ -51,7 +59,12 @@
         li {
             padding-left: 1rem;
             text-indent: -1rem;
-            margin-bottom: .5rem;
+            margin-bottom: 8px;
+
+            @include tablet {
+                line-height: 20px;
+                margin-bottom: 4px;
+            }
         }
     }
 }
