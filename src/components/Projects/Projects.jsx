@@ -1,4 +1,4 @@
-import flixPic from '../../assets/images/Flixnet desktop.png';
+import flixPic from '../../assets/images/Flixnet desktop.jpg';
 import mentorPic from '../../assets/images/mentor-me-desktop-2.png';
 import AWSPic from '../../assets/images/aws-hackathon-1.png';
 import thisPic from '../../assets/images/this-or-that-1.png';
