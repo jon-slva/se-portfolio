@@ -22,19 +22,6 @@ const Header = () => {
         zoomLevel = 80;
     }
 
-    const handleResumeDownload = (e) => {
-        e.preventDefault();
-
-    };
-
-    // const handleCloseResume = (e) => {
-    //     e.preventDefault();
-    //     setIsClosing(true);
-    //     setTimeout(() => {
-    //         setIsClosing(false);
-    //         setShowResume(false);
-    //     }, 500); // Adjust this to match the duration of your fade-out animation
-    // };
 
     const handleContact = (e) => {
         e.preventDefault();
