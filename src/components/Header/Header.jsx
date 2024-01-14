@@ -6,7 +6,7 @@ import "./Header.scss";
 import resumePdf from '../../assets/Jonathan-Silva-Software-Engineer-Resume-2023.pdf';
 
 const Header = () => {
-    const [showResume, setShowResume] = useState(false);
+    // const [showResume, setShowResume] = useState(false);
     const [showContact, setShowContact] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
 
@@ -22,20 +22,6 @@ const Header = () => {
         zoomLevel = 80;
     }
 
-    const handleShowResume = (e) => {
-        e.preventDefault();
-        setIsClosing(false);
-        setShowResume(true)
-    };
-
-    const handleCloseResume = (e) => {
-        e.preventDefault();
-        setIsClosing(true);
-        setTimeout(() => {
-            setIsClosing(false);
-            setShowResume(false);
-        }, 500); // Adjust this to match the duration of your fade-out animation
-    };
 
     const handleContact = (e) => {
         e.preventDefault();
@@ -59,18 +45,11 @@ const Header = () => {
                 <nav className="header-nav">
                     <ul>
                         <li className="header-nav__items"><ScrollLink to="projects" smooth={true} duration={1000} offset={-40}>Projects</ScrollLink></li>
-                        <li className="header-nav__items"><a onClick={handleShowResume}>Resume</a></li>
+                        <li className="header-nav__items"><a href={resumePdf} download>Resume</a></li>
                         <li className="header-nav__items"><a onClick={handleContact}>Contact</a></li>
                     </ul>
                 </nav>
             </header>
-            {showResume && (
-                <div className={`modal ${isClosing ? 'closing' : ''}`}>
-                    <button className="modal__button" onClick={handleCloseResume}>Close</button>
-                    <iframe className="modal__pdf" src={`${resumePdf}#zoom=${zoomLevel}`} title="resume"></iframe>
-                    <a href={resumePdf} className="modal__button" download>Download Resume</a>
-                </div>
-            )}
             {showContact && (
                 <div className={`modal ${isClosing ? 'closing' : ''}`}>
                     <button className="modal__button" onClick={handleCloseContact}>Close</button>

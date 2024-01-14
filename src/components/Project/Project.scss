@@ -3,82 +3,82 @@
 
 
 .project {
-    max-width: 50rem;
-    margin-bottom: 2.5rem;
+	max-width: 50rem;
+	margin-bottom: 2.5rem;
 
-    @include tablet {
-        margin-bottom: 3.75rem;
-    }
+	@include tablet {
+		margin-bottom: 3.75rem;
+	}
 
-    &__title {
-        @include h2-mobile;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        margin-top: 0;
-        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
-        position: relative;
+	&__title {
+		@include h2-mobile;
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		margin-top: 0;
+		text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+		position: relative;
 
-        @include tablet {
-            @include h2-tablet__desk;
-            font-size: 1.75rem;
-            margin-bottom: 1.25rem;
-        }
+		@include tablet {
+			@include h2-tablet__desk;
+			font-size: 1.75rem;
+			margin-bottom: 1.25rem;
+		}
 
-        @include desktop {
-            // @include h2-tablet__desk;
-            font-size: 2rem;
-            margin-bottom: 1.25rem;
-        }
-    }
+		@include desktop {
+			// @include h2-tablet__desk;
+			font-size: 2rem;
+			margin-bottom: 1.25rem;
+		}
+	}
 
-    &__img {
-        width: 100%;
-        border-radius: 4px;
-        margin-bottom: 0.75rem;
-        object-fit: contain;
-        color: grey;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	&__img {
+		width: 100%;
+		border-radius: 4px;
+		margin-bottom: 0.75rem;
+		object-fit: contain;
+		color: grey;
+		box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
-        @include tablet {
-            margin-bottom: 0.75rem;
-        }
-    }
+		@include tablet {
+			margin-bottom: 0.75rem;
+		}
+	}
 
-    &__links {
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
+	&__links {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
 
-        @include tablet {
-            gap: 1.5rem;
-        }
-    }
+		@include tablet {
+			gap: 1.5rem;
+		}
+	}
 
-    &__link {
-        display: flex;
-        align-items: center;
-        @include font-bold;
-        margin-bottom: 0.5rem;
-        font-size: 1.375rem;
-        gap: 0.5rem;
+	&__link {
+		display: flex;
+		align-items: center;
+		@include font-bold;
+		margin-bottom: 0.5rem;
+		font-size: 1.375rem;
+		gap: 0.5rem;
 
-        @include tablet {
-            font-size: 1.5rem;
-        }
+		@include tablet {
+			font-size: 1.5rem;
+		}
 
-        &--github-logo {
-            height: 1.5rem;
-            display: inline-block;
-            filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+		&--github-logo {
+			height: 1.5rem;
+			display: inline-block;
+			filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 
-            @include tablet {
-                height: 1.5rem;
-            }
-        }
+			@include tablet {
+				height: 1.5rem;
+			}
+		}
 
-        &--github-label {
-            text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.4);
-        }
+		&--github-label {
+			text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.4);
+		}
 
-    }
+	}
 }
