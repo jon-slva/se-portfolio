@@ -2,75 +2,80 @@
 @import '../../styles/partials/mixins';
 
 .projects {
-    margin-top: 3.5rem;
+	margin-top: 3.5rem;
 
-    @include desktop {
-        width: 90%;
-    }
+	@include desktop {
+		width: 90%;
+	}
 
-    &__header {
-        font-size: 2.5rem;
-        @include font-bold;
-        margin-bottom: 1.5rem;
-        text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.4);
+	&__header {
+		font-size: 2.5rem;
+		@include font-bold;
+		margin-bottom: 1.5rem;
+		text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.4);
 
-        @include tablet {
-            font-size: 2.5rem;
-            margin-bottom: 2.75rem;
-        }
-    }
+		@include tablet {
+			font-size: 2.5rem;
+			margin-bottom: 2.75rem;
+		}
+	}
 
-    &-container {
-        @include tablet {
-            padding: 0 1rem;
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-        }
+	&-container {
+		@include tablet {
+			padding: 0 1rem;
+			display: flex;
+			justify-content: center;
+			gap: 3rem;
+		}
 
-        @include desktop {
-            padding: 0 2rem;
-            gap: 5rem;
-        }
+		@include desktop {
+			padding: 0 2rem;
+			gap: 5rem;
+		}
 
-        &__svg-image {
-            height: 2.125rem;
-            display: inline-block;
-            filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-            position: absolute;
-            top: -0.625rem;
-            animation: bounce 1s infinite;
+		&__svg-image {
+			height: 2.125rem;
+			display: inline-block;
+			filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+			position: absolute;
+			top: -0.625rem;
+			animation: bounce 1s infinite;
 
-            @include tablet {
-                height: 2.5rem;
-            }
+			@include tablet {
+				height: 2.5rem;
+			}
 
-        }
-    }
+		}
+	}
 
-    &__description {
-        @include p-mobile;
-        color: $white;
-        list-style-type: disc;
-        list-style-position: inside;
-        text-shadow: 3px 4px 2px rgba(0, 0, 0, 0.4);
+	&__description {
+		@include p-mobile;
+		color: $white;
+		list-style-type: disc;
+		list-style-position: inside;
+		text-shadow: 3px 4px 2px rgba(0, 0, 0, 0.4);
 
-        @include tablet {
-            @include p-tablet__desk;
-            margin-bottom: 0.5rem;
-        }
+		@include tablet {
+			@include p-tablet__desk;
+			margin-bottom: 0.5rem;
+		}
 
-        li {
-            padding-left: 1rem;
-            text-indent: -1rem;
-            margin-bottom: 0.5rem;
+		li {
+			padding-left: 1rem;
+			text-indent: -1rem;
+			margin-bottom: 0.5rem;
 
-            @include tablet {
-                line-height: 1.25rem;
-                margin-bottom: 0.25rem;
-            }
-        }
-    }
+			@include tablet {
+				line-height: 1.25rem;
+				margin-bottom: 0.25rem;
+			}
+		}
+	}
+
+	&__stack {
+		font-size: 14px;
+		padding: 5px 0;
+	}
 }
 
 
@@ -78,12 +83,12 @@
 
 @keyframes bounce {
 
-    0%,
-    100% {
-        transform: translate(6px, -6px);
-    }
+	0%,
+	100% {
+		transform: translate(6px, -6px);
+	}
 
-    50% {
-        transform: translate(6px, 6px);
-    }
+	50% {
+		transform: translate(6px, 6px);
+	}
 }
