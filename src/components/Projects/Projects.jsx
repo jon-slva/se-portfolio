@@ -91,7 +91,7 @@ const Projects = () => {
 								Utilizes a third-party API for movie posters and data.
 							</li>
 							<p className='projects__stack'>
-								<strong>Future features:</strong> Shortlist movies, random pick, streaming platform availability for each film, TV Shows, voting with friends.
+								<strong>Future features:</strong> Shortlist movies, random pick, streaming platform availability for each film, TV Shows, voting with friends, React Native port.
 							</p>
 							<p className='projects__stack'>
 								<strong>
