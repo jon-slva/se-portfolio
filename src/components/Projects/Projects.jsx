@@ -44,7 +44,7 @@ const Projects = () => {
 					imgSrc={AWSPic}
 					github1={{ link: 'https://github.com/malyesh/aws-hackathon', label: 'GitHub Repo' }}
 					github2={{ link: '', label: '' }}
-					liveLink={'https://awshackathon.johnny5ive.com/'}
+					liveLink={'https://awshackathon.jonathansilva.io/'}
 				/>
 
 				<Project
@@ -103,7 +103,7 @@ const Projects = () => {
 					imgSrc={flixPic}
 					github1={{ link: 'https://github.com/jon-slva/flixnet', label: 'GitHub Repo' }}
 					github2={{ link: '', label: '' }}
-					liveLink={'https://flixnet.johnny5ive.com/'}
+					liveLink={'https://flixnet.jonathansilva.io/'}
 				/>
 
 				<Project
