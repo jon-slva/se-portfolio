@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
 import "./Header.scss";
 
-import resumePdf from '../../assets/Jonathan-Silva-Software-Engineer-Resume-2023.pdf';
+import resumePdf from '../../assets/Jonathan-Silva-Software-Engineer-Resume-2024.pdf';
 
 const Header = () => {
 	// const [showResume, setShowResume] = useState(false);
