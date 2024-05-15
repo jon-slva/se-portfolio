@@ -32,5 +32,5 @@ jobs:
         username: ${{ secrets.REMOTE_USER }}
         password: ${{ secrets.REMOTE_PASSWORD }}
         port: ${{ secrets.REMOTE_PORT }}
-        source: "build/*"
+        source: "build"
         target: "/home/jonathansilva/public_html"
