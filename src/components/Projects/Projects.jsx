@@ -7,7 +7,7 @@ import winnerMedal from '../../assets/icons/winner-medal.svg';
 import './Projects.scss';
 import Project from '../../components/Project/Project';
 
-const Projects = () => {
+function Projects() {
 	return (
 		<aside className="projects">
 			<h2 className="projects__header">Projects</h2>
