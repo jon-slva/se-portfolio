@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/se-portfolio/static/css/main.454be387.css",
+    "main.js": "/se-portfolio/static/js/main.1e4ae6dc.js",
+    "static/js/787.d5fa4d18.chunk.js": "/se-portfolio/static/js/787.d5fa4d18.chunk.js",
+    "static/media/mentor-me-desktop-2.png": "/se-portfolio/static/media/mentor-me-desktop-2.e68f390b8160ea1ab99c.png",
+    "static/media/aws-hackathon-1.png": "/se-portfolio/static/media/aws-hackathon-1.9d654cde993269e1ac3f.png",
+    "static/media/me.jpg": "/se-portfolio/static/media/me.d68e332d2873c6b6132e.jpg",
+    "static/media/Flixnet desktop.jpg": "/se-portfolio/static/media/Flixnet desktop.2a4d61029e0afd98d2ee.jpg",
+    "static/media/this-or-that-1.png": "/se-portfolio/static/media/this-or-that-1.4ff1690b00cd52cd721e.png",
+    "static/media/NunitoSans_10pt-Regular.ttf": "/se-portfolio/static/media/NunitoSans_10pt-Regular.7a5b1e324beb1081259a.ttf",
+    "static/media/NunitoSans_10pt-Bold.ttf": "/se-portfolio/static/media/NunitoSans_10pt-Bold.e43c5a897c0189a89b62.ttf",
+    "static/media/NunitoSans_10pt-Light.ttf": "/se-portfolio/static/media/NunitoSans_10pt-Light.d120ae23d1fe91716bf9.ttf",
+    "static/media/Jonathan-Silva-Software-Engineer-Resume-2023.pdf": "/se-portfolio/static/media/Jonathan-Silva-Software-Engineer-Resume-2023.74bc958051594852c7cb.pdf",
+    "static/media/node.js.svg": "/se-portfolio/static/media/node.js.8f95dc88789148d8cec71fc2f051ea07.svg",
+    "static/media/three-js-logo.svg": "/se-portfolio/static/media/three-js-logo.30a89356ab54a806003159b316c27bff.svg",
+    "static/media/mysql.svg": "/se-portfolio/static/media/mysql.7b51a3ce6a3c93a069658726d81dc027.svg",
+    "static/media/winner-medal.svg": "/se-portfolio/static/media/winner-medal.90de3204f14f21bd6bc7ff1bd50d62c5.svg",
+    "static/media/sass.svg": "/se-portfolio/static/media/sass.ed5f8705cf7900a7fbcbbc030a9241bd.svg",
+    "static/media/express.svg": "/se-portfolio/static/media/express.10eda01c562e26f2399455030ad3db0c.svg",
+    "static/media/css.svg": "/se-portfolio/static/media/css.fc6fd2062ddd6d6169a3637596a00287.svg",
+    "static/media/react.svg": "/se-portfolio/static/media/react.62dc301cb9d8b9b115a5fba1c97a0518.svg",
+    "static/media/monday-ar21.svg": "/se-portfolio/static/media/monday-ar21.a5e2568b2d7fa4a6ccf7841481f2ca86.svg",
+    "static/media/git.svg": "/se-portfolio/static/media/git.9f34231ffa207696473759ea3a26e3ae.svg",
+    "static/media/axios.svg": "/se-portfolio/static/media/axios.aabc6ad158b938e79dea3ba113cd82a8.svg",
+    "static/media/jira.svg": "/se-portfolio/static/media/jira.0d73fd2308aef4aee1c11fa6397f36e2.svg",
+    "static/media/html.svg": "/se-portfolio/static/media/html.49185ab5bfcf2d0804e310d9ac1a5808.svg",
+    "static/media/github.svg": "/se-portfolio/static/media/github.9d3998ee38aff128019eb39349f95ffb.svg",
+    "static/media/javascript.svg": "/se-portfolio/static/media/javascript.7813b0dbe5e04eff86bbb3a39a13d286.svg",
+    "index.html": "/se-portfolio/index.html",
+    "main.454be387.css.map": "/se-portfolio/static/css/main.454be387.css.map",
+    "main.1e4ae6dc.js.map": "/se-portfolio/static/js/main.1e4ae6dc.js.map",
+    "787.d5fa4d18.chunk.js.map": "/se-portfolio/static/js/787.d5fa4d18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.454be387.css",
+    "static/js/main.1e4ae6dc.js"
+  ]
+}
