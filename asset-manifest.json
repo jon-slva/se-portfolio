@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.ec4a8bb9.css",
-    "main.js": "/static/js/main.82c292bc.js",
+    "main.js": "/static/js/main.c4fce9c9.js",
     "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
     "static/media/mentor-me-desktop-2.png": "/static/media/mentor-me-desktop-2.e68f390b8160ea1ab99c.png",
     "static/media/aws-hackathon-1.png": "/static/media/aws-hackathon-1.9d654cde993269e1ac3f.png",
     "static/media/me.jpg": "/static/media/me.d68e332d2873c6b6132e.jpg",
     "static/media/Flixnet desktop.jpg": "/static/media/Flixnet desktop.2a4d61029e0afd98d2ee.jpg",
     "static/media/this-or-that-1.png": "/static/media/this-or-that-1.4ff1690b00cd52cd721e.png",
+    "static/media/Jonathan Silva - Mid 2024 - Software Engineer Resume.pdf": "/static/media/Jonathan Silva - Mid 2024 - Software Engineer Resume.13467daa25344e662152.pdf",
     "static/media/NunitoSans_10pt-Regular.ttf": "/static/media/NunitoSans_10pt-Regular.7a5b1e324beb1081259a.ttf",
     "static/media/NunitoSans_10pt-Bold.ttf": "/static/media/NunitoSans_10pt-Bold.e43c5a897c0189a89b62.ttf",
     "static/media/NunitoSans_10pt-Light.ttf": "/static/media/NunitoSans_10pt-Light.d120ae23d1fe91716bf9.ttf",
-    "static/media/Jonathan-Silva-Software-Engineer-Resume-2023.pdf": "/static/media/Jonathan-Silva-Software-Engineer-Resume-2023.74bc958051594852c7cb.pdf",
     "static/media/node.js.svg": "/static/media/node.js.8f95dc88789148d8cec71fc2f051ea07.svg",
     "static/media/three-js-logo.svg": "/static/media/three-js-logo.30a89356ab54a806003159b316c27bff.svg",
     "static/media/mysql.svg": "/static/media/mysql.7b51a3ce6a3c93a069658726d81dc027.svg",
@@ -29,11 +29,11 @@
     "static/media/javascript.svg": "/static/media/javascript.7813b0dbe5e04eff86bbb3a39a13d286.svg",
     "index.html": "/index.html",
     "main.ec4a8bb9.css.map": "/static/css/main.ec4a8bb9.css.map",
-    "main.82c292bc.js.map": "/static/js/main.82c292bc.js.map",
+    "main.c4fce9c9.js.map": "/static/js/main.c4fce9c9.js.map",
     "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec4a8bb9.css",
-    "static/js/main.82c292bc.js"
+    "static/js/main.c4fce9c9.js"
   ]
 }
