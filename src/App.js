@@ -7,7 +7,7 @@ function App() {
 	return (
 		<div className='appContain'>
 			<BrowserRouter
-				basename="/se-portfolio"
+			// basename="/se-portfolio"
 			>
 				<Header />
 				<Routes>
