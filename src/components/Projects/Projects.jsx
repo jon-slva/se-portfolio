@@ -44,7 +44,7 @@ const Projects = () => {
 					imgSrc={AWSPic}
 					github1={{ link: 'https://github.com/malyesh/aws-hackathon', label: 'GitHub Repo' }}
 					github2={{ link: '', label: '' }}
-					liveLink={'https://awshackathon.johnny5ive.com/'}
+					liveLink={'https://awshackathon.jonathansilva.io/'}
 				/>
 
 				<Project
