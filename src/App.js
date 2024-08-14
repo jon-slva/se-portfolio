@@ -6,9 +6,7 @@ import Homepage from './pages/Homepage/Homepage';
 function App() {
 	return (
 		<div className='appContain'>
-			<BrowserRouter
-			// basename="/se-portfolio"
-			>
+			<BrowserRouter>
 				<Header />
 				<Routes>
 					<Route path='/' element={<Homepage />} />

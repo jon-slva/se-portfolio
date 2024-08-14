@@ -103,7 +103,7 @@ const Projects = () => {
 					imgSrc={flixPic}
 					github1={{ link: 'https://github.com/jon-slva/flixnet', label: 'GitHub Repo' }}
 					github2={{ link: '', label: '' }}
-					liveLink={'https://flixnet.johnny5ive.com/'}
+					liveLink={'https://flixnet.jonathansilva.io/'}
 				/>
 
 				<Project
