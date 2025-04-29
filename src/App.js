@@ -4,17 +4,17 @@ import Header from './components/Header/Header';
 import Homepage from './pages/Homepage/Homepage';
 
 function App() {
-  return (
-    <div className='appContain'>
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path='/' element={<Homepage />} />
-          <Route path='/404' />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
+	return (
+		<div className='appContain'>
+			<BrowserRouter>
+				<Header />
+				<Routes>
+					<Route path='/' element={<Homepage />} />
+					<Route path='/404' />
+				</Routes>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;
