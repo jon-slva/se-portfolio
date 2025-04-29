@@ -1,5 +1,6 @@
 import logoJS from '../../assets/images/skills/javascript.svg';
 import logoReact from '../../assets/images/skills/react.svg';
+import logoNextJS from '../../assets/images/skills/Nextjs.svg';
 import logoHTML from '../../assets/images/skills/html.svg';
 import logoSass from '../../assets/images/skills/sass.svg';
 import logoThree from '../../assets/images/skills/three-js-logo.svg';
@@ -11,6 +12,10 @@ import logoGit from '../../assets/images/skills/git.svg';
 import logoExpress from '../../assets/images/skills/express.svg';
 import logoJira from '../../assets/images/skills/jira.svg';
 import logoMonday from '../../assets/images/skills/monday-ar21.svg';
+import logoReactNative from '../../assets/images/skills/react-native.svg';
+import logoCapacitor from '../../assets/images/skills/capacitorjs.svg';
+import logoFigma from '../../assets/images/skills/figma.svg';
+import logoTypeScript from '../../assets/images/skills/typescript.svg';
 
 import "./Skills.scss";
 import Skill from '../Skill/Skill';
@@ -22,7 +27,11 @@ const Skills = () => {
 
             <div className="skills__container">
                 <Skill logoSrc={logoJS} altText="Javascript" title="Javascript" />
+                <Skill logoSrc={logoTypeScript} altText="TypeScript" title="TypeScript" />
                 <Skill logoSrc={logoReact} altText="React" title="React" />
+                <Skill logoSrc={logoReactNative} altText="React Native" title="React Native" />
+                <Skill logoSrc={logoNextJS} altText="Next.js" />
+                <Skill logoSrc={logoCapacitor} altText="Capacitor" />
                 <Skill logoSrc={logoHTML} altText="HTML" title="HTML" />
                 <Skill logoSrc={logoCSS} altText="CSS" title="CSS" />
                 <Skill logoSrc={logoSass} altText="Sass" />
@@ -31,7 +40,7 @@ const Skills = () => {
                 <Skill logoSrc={logoMysql} altText="MySQL" />
                 <Skill logoSrc={logoExpress} altText="Express" />
                 <Skill logoSrc={logoAxios} altText="Axios" />
-                <Skill altText="Agile" title="Agile Methodology" />
+                <Skill logoSrc={logoFigma} altText="Figma" />
                 <Skill logoSrc={logoGit} altText="Git" />
                 <Skill altText="Auth" title="User Authentication" />
                 <Skill altText="APIs" title="REST APIs" />
