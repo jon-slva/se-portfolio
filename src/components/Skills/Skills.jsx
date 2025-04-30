@@ -16,6 +16,8 @@ import logoReactNative from '../../assets/images/skills/react-native.svg';
 import logoCapacitor from '../../assets/images/skills/capacitorjs.svg';
 import logoFigma from '../../assets/images/skills/figma.svg';
 import logoTypeScript from '../../assets/images/skills/typescript.svg';
+import logoTailwind from '../../assets/images/skills/tailwind.svg';
+// import logoPython from '../../assets/images/skills/python.svg';
 
 import "./Skills.scss";
 import Skill from '../Skill/Skill';
@@ -26,7 +28,7 @@ const Skills = () => {
             <h2 className="skills__header">Skills</h2>
 
             <div className="skills__container">
-                <Skill logoSrc={logoJS} altText="Javascript" title="Javascript" />
+                <Skill logoSrc={logoJS} altText="JavaScript" title="Javascript" />
                 <Skill logoSrc={logoTypeScript} altText="TypeScript" title="TypeScript" />
                 <Skill logoSrc={logoReact} altText="React" title="React" />
                 <Skill logoSrc={logoReactNative} altText="React Native" title="React Native" />
@@ -35,6 +37,7 @@ const Skills = () => {
                 <Skill logoSrc={logoHTML} altText="HTML" title="HTML" />
                 <Skill logoSrc={logoCSS} altText="CSS" title="CSS" />
                 <Skill logoSrc={logoSass} altText="Sass" />
+                <Skill logoSrc={logoTailwind} altText="Tailwind" />
                 <Skill logoSrc={logoThree} altText="Three.js" />
                 <Skill logoSrc={logoNode} altText="Node" />
                 <Skill logoSrc={logoMysql} altText="MySQL" />
@@ -46,6 +49,7 @@ const Skills = () => {
                 <Skill altText="APIs" title="REST APIs" />
                 <Skill logoSrc={logoJira} altText="Jira" />
                 <Skill logoSrc={logoMonday} altText="Monday" />
+                {/* <Skill logoSrc={logoPython} altText="Python" /> */}
             </div>
         </section>
     )
